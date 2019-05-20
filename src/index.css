@@ -1,13 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Work Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #eceff1;
+  color: #4d4d4d;
+  padding: 50px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.PokeCard {
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  margin: 1rem;
+  box-shadow: 7px 10px 12px rgba(0, 0, 0, 0.56);
+  border-radius: 3px;
+  background: #fff;
+}
+
+.Pokedex {
+  text-align: center;
+}
+
+.Pokedex-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.PokeCard-data {
+  font-size: 80%;
+}
+
+.PokeCard-title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.Pokedex-winner {
+  color: #4caf50;
+}
+
+.Pokedex-loser {
+  color: #e91e63;
+}
+
+.PokeCard-image {
+  background: #eceff1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  height: 250px;
+  margin-bottom: 1rem;
+}
+
+.PokeCard img {
+  transition: all 500ms ease;
+}
+
+.PokeCard img:hover {
+  transform: scale(1.25);
+  opacity: 0.7;
 }
